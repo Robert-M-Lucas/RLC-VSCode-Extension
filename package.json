@@ -1,0 +1,25 @@
+{
+  "name": "rlc-lang",
+  "displayName": "RLC Lang",
+  "description": "Syntax for RLC",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "rlc",
+      "aliases": ["RLC", "rlc"],
+      "extensions": [".rlc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "rlc",
+      "scopeName": "source.rlc",
+      "path": "./syntaxes/rlc.tmLanguage.json"
+    }]
+  }
+}

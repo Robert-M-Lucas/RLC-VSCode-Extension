@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "RLC",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#functions"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.rlc",
+				"match": "\\b(import|let|arr|tag)\\b"
+			}]
+		},
+		"functions": {
+			"patterns": [{
+				"name": "support.function",
+				"match": "\\b(add|div|equal|exit|goto|greater|if|input|invert|less|mod|multiply|notequal|printcnl|printc|printnl|print|random|setarr|set|skip|sub)\\b"
+			}]
+		}
+	},
+	"scopeName": "source.rlc"
+}
